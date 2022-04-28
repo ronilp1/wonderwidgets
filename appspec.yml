@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /wonderwidgets
+
+permissions:
+  - object: /wonderwidgets/html
+    pattern: "*.html"
+    except: [index.html]
+    mode: 400
+    type:
+      - files
+
